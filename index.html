@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--<meta http-equiv="x-ua-compatible" content= "IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Student Management System </title>
+        <!-- Add external CSS to the page -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> Students' Management System </h1>
+        <table>
+            <tr>
+                <td>
+                    <!-- Form to accept required fields-->
+                    <!-- Create a form inside the first column to get the user's inputs-->
+                    <!-- Create each field in its own divison/section <div>-->
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="fullName"> Full Name </label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label for="studentId"> Student ID </label>
+                            <input type="text" name="studentId" id="studentId">
+                        </div>
+                        <div>
+                            <label for="major"> Major </label>
+                            <input type="text" name="major" id="major">
+                        </div>
+                        <div>
+                            <label for="phone"> Phone </label>
+                            <input type="number" name="phone" id="phone">
+                        </div>
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+
+                </td>
+                <td>
+                    <!-- Table to list all entered records-->
+                    <table class="list" id="storedStudentList">
+                        <thead>
+                            <tr>
+                                <th> Full Name</th>
+                                <th>Student ID</th>
+                                <th>Major </th>
+                                <th> Phone </th>
+                                <th> Operation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- Add JavaScript to the page -->
+        <script type="text/javaScript" src="./script.js"></script>
+    </body>
+</html>
